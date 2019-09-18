@@ -6,7 +6,7 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=sdc-ntp-clock
+PKG_NAME:=oc3c-ntp-clock
 PKG_RELEASE:=1
 
 include $(INCLUDE_DIR)/package.mk
