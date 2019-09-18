@@ -12,7 +12,7 @@ PKG_RELEASE:=1
 include $(INCLUDE_DIR)/package.mk
 
 define Package/sdc-ntp-clock
-  TITLE:=SDC Ntp Clock
+  TITLE:=OC3C Ntp Clock
   DEPENDS:=@TARGET_ramips_mt7688_LinkIt7688
   HIDDEN:=1
   CATEGORY:=Base system
@@ -31,7 +31,7 @@ define Build/Compile
 	true
 endef
 
-define Package/sdc-ntp-clock/extra_provides
+define Package/oc3c-ntp-clock/extra_provides
 	echo 'libnetsnmp.so.30'; \
 	echo 'libnetsnmpagent.so.30'; \
 	echo 'libnetsnmpmibs.so.30'; \
@@ -40,8 +40,8 @@ define Package/sdc-ntp-clock/extra_provides
 	echo 'librt.so.0';
 endef
 
-define Package/sdc-ntp-clock/install
+define Package/oc3c-ntp-clock/install
 	$(CP) -fpR ./files/* $(1)
 endef
 
-$(eval $(call BuildPackage,sdc-ntp-clock))
+$(eval $(call BuildPackage,oc3c-ntp-clock))
