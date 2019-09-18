@@ -11,7 +11,7 @@ PKG_RELEASE:=1
 
 include $(INCLUDE_DIR)/package.mk
 
-define Package/sdc-ntp-clock
+define Package/oc3c-ntp-clock
   TITLE:=OC3C Ntp Clock
   DEPENDS:=@TARGET_ramips_mt7688_LinkIt7688
   HIDDEN:=1
