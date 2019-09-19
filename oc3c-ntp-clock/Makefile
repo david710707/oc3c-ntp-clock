@@ -37,6 +37,7 @@ define Package/oc3c-ntp-clock/extra_provides
 	echo 'libnetsnmpmibs.so.30'; \
 	echo 'libnetsnmptrapd.so.30'; \
 	echo 'libpthread.so.0'; \
+	echo 'libev.so.4'; \
 	echo 'librt.so.0';
 endef
 
